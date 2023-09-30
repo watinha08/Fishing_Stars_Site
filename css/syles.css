@@ -1,129 +1,48 @@
 :root {
-    --color-blue: #2a81c9;
-    --color-blue2: #5bd4ef;
-    --color-pink: #f095d0;
-    --color-pink2: #f173a3;
-    --color-yellow: #ffe76d;
-    --color-yellow2: #f0e78a;
-    --color-grey: #4b3e3e;
-    --color-black: #292323;
+    --color-blue: #569ce2;
+    --color-pink: #dd4d6a;
+    --color-yellow: #fffd6f;
     --font-body: 'Concert One', cursive;
-    --font-menu: 'Chango', cursive;
-    --font-title-subtitle: 'Coiny', cursive;
+    --font-title: 'Coiny', cursive;
+    --font-header: 'Chango', cursive;
+}
+
+html {
+    scroll-padding: 80px;
 }
 
 body {
     font-family: var(--font-body);
-    font-size: 19px;
-    color: var(--color-grey);
-}
-
-header {
-    font-family: var(--font-menu);
+    font-size: 22px;
 }
 
 h1,
 h2,
 h3,
-h4 {
-    font-family: var(--font-title-subtitle);
+h4,
+h5 {
+    font-family: var(--font-title);
 }
 
-h1 {
-    font-size: 42px;
-    color: var(--color-black);
-}
-
-h2 {
-    font-size: 36px;
-}
-
-p {
-    font-size: 24px
+header {
+    font-family: var(--font-header);
 }
 
 .text-blue {
     color: var(--color-blue);
 }
 
-.text-blue2 {
-    color: var(--color-blue2);
-}
-
 .text-pink {
-    color: var(--color-pink2);
+    color: var(--color-pink);
 }
 
-.text-pink2 {
-    color: var(--color-pink2);
+.icon-position {
+    position: relative;
+    top: 1px;
 }
 
-.text-yellow {
-    color: var(--color-yellow);
-}
-
-.text-yellow2 {
-    color: var(--color-yellow2);
-}
-
-.background-header {
-    background-color: var(--color-pink2);
-}
-
-.background-text-up {
-    background-image: linear-gradient(0deg,
-            hsl(65deg 86% 85%) 0%,
-            hsl(63deg 82% 83%) 11%,
-            hsl(62deg 79% 81%) 22%,
-            hsl(61deg 76% 79%) 33%,
-            hsl(60deg 74% 77%) 44%,
-            hsl(59deg 75% 75%) 56%,
-            hsl(58deg 75% 73%) 67%,
-            hsl(57deg 76% 71%) 78%,
-            hsl(56deg 77% 69%) 89%,
-            hsl(55deg 78% 67%) 100%);
-}
-
-.background-text-right {
-    background-image: linear-gradient(90deg,
-            hsl(65deg 86% 85%) 0%,
-            hsl(63deg 82% 83%) 11%,
-            hsl(62deg 79% 81%) 22%,
-            hsl(61deg 76% 79%) 33%,
-            hsl(60deg 74% 77%) 44%,
-            hsl(59deg 75% 75%) 56%,
-            hsl(58deg 75% 73%) 67%,
-            hsl(57deg 76% 71%) 78%,
-            hsl(56deg 77% 69%) 89%,
-            hsl(55deg 78% 67%) 100%);
-}
-
-.background-text-left {
-    background-image: linear-gradient(270deg,
-            hsl(65deg 86% 85%) 0%,
-            hsl(63deg 82% 83%) 11%,
-            hsl(62deg 79% 81%) 22%,
-            hsl(61deg 76% 79%) 33%,
-            hsl(60deg 74% 77%) 44%,
-            hsl(59deg 75% 75%) 56%,
-            hsl(58deg 75% 73%) 67%,
-            hsl(57deg 76% 71%) 78%,
-            hsl(56deg 77% 69%) 89%,
-            hsl(55deg 78% 67%) 100%);
-}
-
-.background-text-down {
-    background-image: linear-gradient(180deg,
-            hsl(65deg 86% 85%) 0%,
-            hsl(63deg 82% 83%) 11%,
-            hsl(62deg 79% 81%) 22%,
-            hsl(61deg 76% 79%) 33%,
-            hsl(60deg 74% 77%) 44%,
-            hsl(59deg 75% 75%) 56%,
-            hsl(58deg 75% 73%) 67%,
-            hsl(57deg 76% 71%) 78%,
-            hsl(56deg 77% 69%) 89%,
-            hsl(55deg 78% 67%) 100%);
+.logo-menu:hover {
+    color: var(--color-pink);
 }
 
 .navbar-toggler {
@@ -131,90 +50,198 @@ p {
 }
 
 .nav-link {
-    font-weight: 800;
-    font-size: 25px;
-    color: var(--color-blue);
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .nav-link:hover {
-    color: var(--color-yellow);
+    color: var(--color-pink);
 }
 
-.gradiente-banner {
+.card-menor {
+    max-width: 35vh;
+    min-height: 100px;
+}
+
+.altura-card {
+    min-height: 93vh;
+}
+
+.altura-card-menor {
+    min-height: 33vh;
+}
+
+.gradiente-body {
     background-image: linear-gradient(45deg,
-            hsl(211deg 59% 52%) 0%,
-            hsl(203deg 65% 56%) 18%,
-            hsl(196deg 73% 61%) 26%,
-            hsl(191deg 82% 65%) 33%,
-            hsl(206deg 49% 68%) 39%,
-            hsl(276deg 25% 63%) 44%,
-            hsl(321deg 48% 52%) 50%,
-            hsl(328deg 57% 58%) 56%,
-            hsl(333deg 68% 64%) 61%,
-            hsl(337deg 82% 70%) 67%,
-            hsl(6deg 75% 78%) 74%,
-            hsl(34deg 76% 76%) 82%,
-            hsl(55deg 77% 74%) 100%);
+            hsl(265deg 85% 67%) 0%,
+            hsl(268deg 84% 68%) 7%,
+            hsl(271deg 84% 69%) 13%,
+            hsl(274deg 84% 70%) 18%,
+            hsl(277deg 84% 72%) 24%,
+            hsl(280deg 84% 73%) 29%,
+            hsl(283deg 84% 75%) 33%,
+            hsl(287deg 84% 76%) 38%,
+            hsl(290deg 85% 78%) 42%,
+            hsl(293deg 85% 79%) 46%,
+            hsl(296deg 87% 81%) 50%,
+            hsl(299deg 89% 83%) 53%,
+            hsl(287deg 100% 85%) 57%,
+            hsl(276deg 100% 86%) 60%,
+            hsl(265deg 100% 87%) 64%,
+            hsl(252deg 100% 88%) 68%,
+            hsl(239deg 100% 88%) 71%,
+            hsl(228deg 100% 86%) 75%,
+            hsl(220deg 100% 85%) 79%,
+            hsl(215deg 100% 83%) 83%,
+            hsl(212deg 100% 83%) 88%,
+            hsl(209deg 99% 82%) 94%,
+            hsl(206deg 90% 81%) 100%);
 }
 
-.gradiente-banner2 {
+.gradiente-plataformas {
     background-image: linear-gradient(315deg,
-            hsl(211deg 59% 52%) 0%,
-            hsl(203deg 65% 56%) 18%,
-            hsl(196deg 73% 61%) 26%,
-            hsl(191deg 82% 65%) 33%,
-            hsl(206deg 49% 68%) 39%,
-            hsl(276deg 25% 63%) 44%,
-            hsl(321deg 48% 52%) 50%,
-            hsl(328deg 57% 58%) 56%,
-            hsl(333deg 68% 64%) 61%,
-            hsl(337deg 82% 70%) 67%,
-            hsl(6deg 75% 78%) 74%,
-            hsl(34deg 76% 76%) 82%,
-            hsl(55deg 77% 74%) 100%);
+            hsl(55deg 93% 51%) 0%,
+            hsl(47deg 100% 50%) 11%,
+            hsl(37deg 100% 57%) 22%,
+            hsl(23deg 100% 63%) 33%,
+            hsl(5deg 100% 68%) 44%,
+            hsl(345deg 100% 65%) 56%,
+            hsl(332deg 100% 61%) 67%,
+            hsl(322deg 97% 60%) 78%,
+            hsl(304deg 63% 54%) 89%,
+            hsl(274deg 67% 59%) 100%);
 }
 
-.gradiente {
-    background-image: linear-gradient(45deg,
-            hsl(337deg 80% 63%) 0%,
-            hsl(330deg 72% 62%) 11%,
-            hsl(321deg 61% 60%) 22%,
-            hsl(309deg 48% 59%) 33%,
-            hsl(291deg 44% 60%) 44%,
-            hsl(273deg 49% 63%) 56%,
-            hsl(255deg 52% 65%) 67%,
-            hsl(236deg 56% 66%) 78%,
-            hsl(221deg 63% 60%) 89%,
-            hsl(211deg 67% 54%) 100%);
+.gradiente-card1 {
+    background-image: linear-gradient(
+  90deg,
+  hsl(192deg 84% 69%) 0%,
+  hsl(193deg 81% 70%) 14%,
+  hsl(195deg 78% 71%) 25%,
+  hsl(198deg 76% 72%) 32%,
+  hsl(200deg 73% 73%) 38%,
+  hsl(203deg 70% 73%) 42%,
+  hsl(206deg 66% 74%) 45%,
+  hsl(210deg 63% 75%) 48%,
+  hsl(215deg 59% 76%) 51%,
+  hsl(220deg 55% 76%) 54%,
+  hsl(227deg 52% 77%) 57%,
+  hsl(235deg 47% 78%) 61%,
+  hsl(245deg 45% 77%) 65%,
+  hsl(254deg 45% 76%) 70%,
+  hsl(262deg 45% 75%) 76%,
+  hsl(270deg 45% 74%) 83%,
+  hsl(277deg 45% 72%) 91%,
+  hsl(283deg 46% 71%) 100%
+);
 }
 
-.logo {
-    width: 35%;
+.gradiente-card2 {
+    background-image: linear-gradient(
+  90deg,
+  hsl(283deg 46% 71%) 0%,
+  hsl(286deg 42% 72%) 14%,
+  hsl(290deg 38% 72%) 25%,
+  hsl(294deg 34% 72%) 32%,
+  hsl(301deg 31% 73%) 38%,
+  hsl(308deg 31% 74%) 42%,
+  hsl(315deg 32% 75%) 45%,
+  hsl(323deg 32% 77%) 48%,
+  hsl(332deg 33% 78%) 51%,
+  hsl(340deg 34% 79%) 54%,
+  hsl(350deg 35% 80%) 57%,
+  hsl(360deg 36% 81%) 61%,
+  hsl(9deg 41% 81%) 65%,
+  hsl(15deg 46% 81%) 70%,
+  hsl(21deg 51% 81%) 76%,
+  hsl(25deg 56% 81%) 83%,
+  hsl(29deg 61% 81%) 91%,
+  hsl(32deg 66% 81%) 100%
+);
 }
 
-.plataformas {
-    margin-top: 10px;
+.gradiente-card3 {
+    background-image: linear-gradient(
+  90deg,
+  hsl(32deg 66% 81%) 0%,
+  hsl(30deg 65% 81%) 14%,
+  hsl(29deg 63% 80%) 25%,
+  hsl(27deg 62% 79%) 32%,
+  hsl(25deg 61% 78%) 38%,
+  hsl(23deg 59% 77%) 42%,
+  hsl(21deg 58% 76%) 45%,
+  hsl(19deg 57% 75%) 48%,
+  hsl(17deg 56% 75%) 51%,
+  hsl(16deg 55% 74%) 54%,
+  hsl(14deg 55% 73%) 57%,
+  hsl(12deg 54% 72%) 61%,
+  hsl(10deg 53% 71%) 65%,
+  hsl(8deg 53% 70%) 70%,
+  hsl(6deg 52% 69%) 76%,
+  hsl(4deg 51% 68%) 83%,
+  hsl(2deg 51% 67%) 91%,
+  hsl(0deg 51% 66%) 100%
+);
 }
 
-.center-integrantes {
-    margin-left: 10%;
-    margin-right: 10%;
+.gradiente-footer {
+    background-image: linear-gradient(
+  150deg,
+  hsl(55deg 69% 80%) 0%,
+  hsl(46deg 80% 80%) 11%,
+  hsl(39deg 89% 81%) 22%,
+  hsl(33deg 97% 81%) 33%,
+  hsl(28deg 100% 82%) 44%,
+  hsl(23deg 100% 82%) 56%,
+  hsl(18deg 100% 83%) 67%,
+  hsl(12deg 100% 83%) 78%,
+  hsl(7deg 93% 84%) 89%,
+  hsl(0deg 83% 84%) 100%
+);
 }
 
-.imagens-integrantes {
-    max-height: 250px;
+.gardiente-card {
+    background-image: linear-gradient(
+  45deg,
+  hsl(191deg 54% 72%) 0%,
+  hsl(198deg 62% 74%) 9%,
+  hsl(204deg 68% 77%) 18%,
+  hsl(212deg 70% 79%) 27%,
+  hsl(223deg 66% 82%) 36%,
+  hsl(242deg 57% 84%) 45%,
+  hsl(267deg 50% 83%) 55%,
+  hsl(295deg 40% 80%) 64%,
+  hsl(320deg 53% 81%) 73%,
+  hsl(336deg 68% 82%) 82%,
+  hsl(349deg 79% 83%) 91%,
+  hsl(0deg 83% 84%) 100%
+);
 }
 
-.imagem-esq {
-    margin-right: 100%;
-}
-
-.non-btn {
-    text-decoration: none;
-    border: none;
-    padding-top: 14px;
-}
-
-.video {
-    max-width: 50%;
+.gradiente-header {
+    background-image: linear-gradient(
+  315deg,
+  hsl(316deg 94% 73%) 0%,
+  hsl(314deg 90% 72%) 5%,
+  hsl(312deg 86% 72%) 10%,
+  hsl(310deg 81% 71%) 14%,
+  hsl(307deg 77% 71%) 19%,
+  hsl(305deg 73% 70%) 24%,
+  hsl(302deg 69% 70%) 29%,
+  hsl(299deg 67% 69%) 33%,
+  hsl(296deg 69% 70%) 38%,
+  hsl(293deg 70% 70%) 43%,
+  hsl(290deg 72% 71%) 48%,
+  hsl(287deg 73% 71%) 52%,
+  hsl(284deg 75% 71%) 57%,
+  hsl(281deg 77% 72%) 62%,
+  hsl(278deg 78% 72%) 67%,
+  hsl(276deg 80% 73%) 71%,
+  hsl(273deg 81% 73%) 76%,
+  hsl(270deg 83% 73%) 81%,
+  hsl(267deg 84% 74%) 86%,
+  hsl(264deg 85% 74%) 90%,
+  hsl(261deg 87% 74%) 95%,
+  hsl(258deg 88% 75%) 100%
+);
 }
