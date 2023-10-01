@@ -41,10 +41,6 @@ header {
     top: 1px;
 }
 
-.logo-menu:hover {
-    color: var(--color-pink);
-}
-
 .navbar-toggler {
     box-shadow: none !important;
 }
@@ -55,7 +51,7 @@ header {
 }
 
 .nav-link:hover {
-    color: var(--color-pink);
+    color: var(--color-yellow);
 }
 
 .card-menor {
@@ -99,17 +95,32 @@ header {
 }
 
 .gradiente-plataformas {
-    background-image: linear-gradient(315deg,
-            hsl(55deg 93% 51%) 0%,
-            hsl(47deg 100% 50%) 11%,
-            hsl(37deg 100% 57%) 22%,
-            hsl(23deg 100% 63%) 33%,
-            hsl(5deg 100% 68%) 44%,
-            hsl(345deg 100% 65%) 56%,
-            hsl(332deg 100% 61%) 67%,
-            hsl(322deg 97% 60%) 78%,
-            hsl(304deg 63% 54%) 89%,
-            hsl(274deg 67% 59%) 100%);
+    background-image: linear-gradient(
+  315deg,
+  hsl(292deg 35% 54%) 0%,
+  hsl(286deg 36% 55%) 5%,
+  hsl(281deg 38% 55%) 9%,
+  hsl(276deg 39% 55%) 14%,
+  hsl(271deg 40% 55%) 18%,
+  hsl(265deg 42% 56%) 23%,
+  hsl(260deg 43% 56%) 27%,
+  hsl(254deg 44% 56%) 32%,
+  hsl(248deg 45% 56%) 36%,
+  hsl(241deg 46% 57%) 41%,
+  hsl(234deg 49% 55%) 45%,
+  hsl(228deg 53% 52%) 50%,
+  hsl(217deg 64% 49%) 55%,
+  hsl(207deg 97% 42%) 59%,
+  hsl(205deg 100% 42%) 64%,
+  hsl(202deg 100% 42%) 68%,
+  hsl(200deg 100% 42%) 73%,
+  hsl(197deg 100% 42%) 77%,
+  hsl(195deg 100% 42%) 82%,
+  hsl(192deg 100% 42%) 86%,
+  hsl(192deg 69% 49%) 91%,
+  hsl(191deg 62% 54%) 95%,
+  hsl(189deg 57% 58%) 100%
+);
 }
 
 .gradiente-card1 {
